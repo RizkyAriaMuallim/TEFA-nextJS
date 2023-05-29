@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .sidebar {
+        @apply grid grid-cols-testTemplate h-full;
+    }
+    .sidebar-ul {
+        @apply text-neutral-100 font-bold m-4;
+    }
+    .sidebar-li {
+        @apply rounded-lg border-2 p-2 border-blue-300 m-1 block;
+    }
+
+    .card {
+        @apply rounded-lg drop-shadow-2xl bg-slate-50 w-40 h-40 text-stone-900 text-sm p-3;
+    }
+
+    .navbar {
+        @apply w-full;
+    }
+    .navbar-ul {
+        @apply font-semibold inline-block text-center w-full bg-emerald-200 px-20 py-0 mx-auto;
+    }
+    .navbar-li {
+        @apply inline-block p-3;
+    }
+}
